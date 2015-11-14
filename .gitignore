@@ -1,0 +1,14 @@
+.ds_store
+*.class
+.idea/*
+out/*
+*.iml
+lib/*.gz
+scripts/*
+.settings/
+.project
+target/
+dump.txt
+bla.txt
+librocksdbjni.so
+nohup.out

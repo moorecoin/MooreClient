@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* css document */
+div.controlsrow, div.headersrow {
+    font-family: georgia;
+}
+
+div.canvas {
+
+    font-family: lucida console, georgia;
+
+    font-size: 13px;
+
+    background-color: #ececec;
+
+    color: #000000;
+
+    border: solid 1px #cecece;
+
+}
+
+.objectbrace {
+
+    color: #00aa00;
+
+    font-weight: bold;
+
+}
+
+.arraybrace {
+
+    color: #0033ff;
+
+    font-weight: bold;
+
+}
+
+.propertyname {
+
+    color: #cc0000;
+
+    font-weight: bold;
+
+}
+
+.string {
+
+    color: #007777;
+
+}
+
+.number {
+
+    color: #aa00aa;
+
+}
+
+.boolean {
+
+    color: #0000ff;
+
+}
+
+.function {
+
+    color: #aa6633;
+
+    text-decoration: italic;
+
+}
+
+.null {
+
+    color: #0000ff;
+
+}
+
+.comma {
+
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+pre.codecontainer {
+
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+
+}
+
+pre.codecontainer img {
+
+    cursor: pointer;
+
+    border: none;
+
+    margin-bottom: -1px;
+
+}
+
+#collapsibleviewdetail a {
+    padding-left: 10px;
+}
+
+#controlsrow {
+    white-space: nowrap;
+    font: 11px georgia;
+
+}
+
+#tabsizeholder {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#headertitle {
+    text-align: right;
+    font-size: 11px;
+}
+
+#headersubtitle {
+    margin-bottom: 2px;
+    margin-top: 0px
+}
+
+#rawjson {
+    width: 99%;
+    height: 120px;
+
+}
+
+a.othertoolslink {
+    color: #555;
+    text-decoration: none;
+}
+
+a.othertoolslink:hover {
+    text-decoration: underline;
+}
+/*span{*/
+    /*font-size: 14px;*/
+    /*font-family: 'dejavu sans', courier new, helvetica, sans-serif;*/
+/*}*/
+/*p{*/
+    /*font-size: 14px;*/
+    /*font-family: 'dejavu sans', courier new, helvetica, sans-serif;*/
+/*}*/
+table {
+    *border-collapse: collapse; /* ie7 and lower */
+    border-spacing: 0;
+    /*width: 100%;*/
+    /*font-size: 14px;*/
+    font-family: 'dejavu sans', courier new, helvetica, sans-serif;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 2px;
+
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font-weight: bold;
+    text-align: center;
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+#txtable tr td:last-child{white-space: auto;word-break: break-all;}

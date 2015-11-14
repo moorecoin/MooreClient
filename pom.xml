@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/pom/4.0.0" xmlns:xsi="http://www.w3.org/2001/xmlschema-instance" xsi:schemalocation="http://maven.apache.org/pom/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelversion>4.0.0</modelversion>
+
+    <groupid>org.moorecoinlab</groupid>
+    <artifactid>moorecoin-java</artifactid>
+    <packaging>pom</packaging>
+    <version>0.0.2-snapshot</version>
+
+    <properties>
+        <project.build.sourceencoding>utf-8</project.build.sourceencoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <profiles>
+        <profile>
+            <id>development</id>
+            <activation>
+                <activebydefault>true</activebydefault>
+            </activation>
+            <properties>
+                <env>development</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <env>production</env>
+            </properties>
+        </profile>
+    </profiles>
+    <build>
+        <plugins>
+            <plugin>
+                <groupid>org.apache.maven.plugins</groupid>
+                <artifactid>maven-compiler-plugin</artifactid>
+                <version>3.1</version>
+                <executions>
+                    <execution>
+                        <id>default-compile</id>
+                        <configuration>
+                            <showdeprecation>true</showdeprecation>
+                            <showwarnings>true</showwarnings>
+                            <compilerarguments>
+                                <source>${maven.compiler.source}</source>
+                                <target>${maven.compiler.target}</target>
+                            </compilerarguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupid>org.apache.maven.plugins</groupid>
+                <artifactid>maven-resources-plugin</artifactid>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupid>org.apache.maven.plugins</groupid>
+                <artifactid>maven-release-plugin</artifactid>
+                <version>2.5.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupid>junit</groupid>
+            <artifactid>junit</artifactid>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupid>com.google.code.gson</groupid>
+            <artifactid>gson</artifactid>
+            <version>2.2.4</version>
+        </dependency>
+        <dependency>
+            <groupid>org.apache.commons</groupid>
+            <artifactid>commons-lang3</artifactid>
+            <version>3.3.2</version>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>moorecoin-lib</module>
+        <module>ripple-bouncycastle</module>
+        <module>moorecoin-info-web</module>
+    </modules>
+
+
+</project>
